@@ -30,7 +30,7 @@
                     <div class="list-group-item mb-2">
                         <h3><?php echo esc($announcement['title']); ?></h3>
                         <p><?php echo esc($announcement['content']); ?></p>
-                        <small>Posted on: <?php echo date('F j, Y', strtotime($announcement['date_posted'])); ?></small>
+                        <small>Posted on: <?php echo date('F j, Y', strtotime($announcement['created_at'])); ?></small>
                     </div>
                 <?php endforeach; ?>
             </div>
